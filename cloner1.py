@@ -807,7 +807,7 @@ def a_s():
 
     print 47 * '-'
 
-    print '\t\x1b[1;94mThanks To My Mind Mr-Ubaid\x1b[1;91m'
+    print '\t\x1b[1;94mIm Famous king 😈\x1b[1;91m'
 
     print 47 * '-'
 
