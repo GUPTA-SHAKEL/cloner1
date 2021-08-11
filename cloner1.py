@@ -118,7 +118,7 @@ def reg():
 
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/GUPTA-SHAKEL/cloner/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/GUPTA-SHAKEL/cloner1/main/server.txt').text
 
     if to in r:
 
