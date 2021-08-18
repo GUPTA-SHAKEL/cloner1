@@ -48,6 +48,7 @@ WHATSAPP: +2347013107449\033[1;93m
 FB : https://www.facebook.com/profile.php?id=100046218699200\033[1;93m
 =================================\033[1;93m          Send id in Messenger or WhatsApp for approval\n\x1b[1;97m `
 =================================\033[1;93m
+"""
 
 def reg():
     os.system('clear')
