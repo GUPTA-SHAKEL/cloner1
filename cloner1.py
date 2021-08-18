@@ -76,13 +76,12 @@ def reg():
         print ''
         print ' \x1b[1;92mYour Id Is Not Approved Already '
         print ''
-        print ' \x1b[1;92mCopy token id and send to Timmy Tedy'
+        print ' \x1b[1;92mCopy token id and send to Mark Cornel'
         print ''
         print ' \x1b[1;92mYour id: ' + to
         print ''
         raw_input('\x1b[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/70
-13107449')
+        os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
         reg()
 
 
@@ -92,14 +91,14 @@ def reg2():
     print ''
     print '\tApproval not detected'
     print ''
-    print ' \x1b[1;92mCopy And Press Enter , And Send Me On WhatsApp'
+    print ' \x1b[1;92mCopy And Press Enter , And Send Me On Facebook'
     print ''
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
     print ''
-    raw_input(' Press enter to go to WhatsApp ')
-    os.system('xdg-open https://wa.me/7013107449')
+    raw_input(' Press enter to go to Facebook ')
+    os.system('xdg-open https://www.facebook.com/profile.php?id=100046218699200')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -158,7 +157,7 @@ def log_menu():
 
 
 def log_menu_s():
-    s = raw_input(' \033[1;93mhttps://github.com/TimTed ')
+    s = raw_input(' \033[1;93mhttps://github.com/GUPTA-SHAKEL')
     if s == '1':
         log_fb()
     elif s == '2':
@@ -228,7 +227,7 @@ def log_cookie():
     print ''
     try:
         cookie = raw_input(' Paste cookies here: ')
-        data = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36', 
+        data = {'user-agent': 'Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16', 
            'referer': 'https://m.facebook.com/', 
            'host': 'm.facebook.com', 
            'origin': 'https://m.facebook.com', 
