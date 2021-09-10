@@ -120,13 +120,13 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit("\033[1;97m[\033[1;94m?\033[1;97m] Internet Error")
 	logo()
-	print("\n\033[1;97m[\033[1;94m01\033[1;97m] Crack Id From Public/Friends")
-	print("\033[1;97m[\033[1;94m02\033[1;97m] Crack Id From Followers")
-	print("\033[1;97m[\033[1;94m03\033[1;97m] Multi Crack\033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;97m[\033[1;94m04\033[1;97m] Chack Crack Results")
-	print("\033[1;97m[\033[1;94m05\033[1;97m] User-Agent Settings\033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;97m[\033[1;94m00\033[1;97m] Exit\033[1;97m [ \033[1;91mDelete Token \033[1;97m]")
-	Bilal = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] Chouse : ")
+	print("\n\033[1;97m[\033[1;94m01\033[1;92m] Crack Id From Public/Friends")
+	print("\033[1;97m[\033[1;94m02\033[1;92m] Crack Id From Followers")
+	print("\033[1;97m[\033[1;94m03\033[1;92m] Multi Crack\033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[\033[1;94m04\033[1;92m] Chack Crack Results")
+	print("\033[1;97m[\033[1;94m05\033[1;92m] User-Agent Settings\033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[\033[1;94m00\033[1;92m] Exit\033[1;97m [ \033[1;91mDelete Token \033[1;97m]")
+	Bilal = raw_input("\n\033[1;97m[\033[1;94m+\033[1;95m] Chouse : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -139,14 +139,14 @@ def menu():
 		massal()
 		method()
 	elif Bilal == "4" or Bilal == "04":
-		print("\n\033[1;97m[\033[1;94m01\033[1;97m] Chack Result OK")
-		print("\033[1;97m[\033[1;94m02\033[1;97m] Chack Result CP")
-		cek = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] Chouse : ")
+		print("\n\033[1;97m[\033[1;94m01\033[1;93m] Chack Result OK")
+		print("\033[1;97m[\033[1;94m02\033[1;93m] Chack Result CP")
+		cek = raw_input("\n\033[1;97m[\033[1;94m+\033[1;93m] Chouse : ")
 		if cek =="":
 			menu()
 		elif cek == "1":
 			dirs = os.listdir("OK")
-			print("\033[1;97m[\033[1;94m+\033[1;97m] Copy File Name  And Past into Input")
+			print("\033[1;97m[\033[1;94m+\033[1;95m] Copy File Name  And Past into Input")
 			for file in dirs:
 				print("[•]  "+file)
 			try:
@@ -165,7 +165,7 @@ def menu():
 			exit(" ")
 		elif cek == "2":
 			dirs = os.listdir("CP")
-			print("\033[1;97m[\033[1;94m+\033[1;97m] Copy File Name And Past into Input")
+			print("\033[1;97m[\033[1;94m+\033[1;95m] Copy File Name And Past into Input")
 			for file in dirs:
 				print(" + "+file)
 			try:
@@ -246,11 +246,11 @@ def massal():
 	print("\033[1;97m[\033[1;94m+\033[1;97m] Total id  : \033[0;91m%s\033[0;97m"%(len(id))) 
  
 def method():
-	print("\n\033[1;97m[\033[1;94m?\033[1;97m] Choose Cracking Mathod")
-	print("\033[1;97m[\033[1;94m1\033[1;97m] B-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;97m[\033[1;94m2\033[1;97m] Mbasic\033[1;97m [ \033[1;95mSlow \033[1;97m]")
-	print("\033[1;97m[\033[1;94m3\033[1;97m] Free Facebook\033[1;97m [ \033[1;95mSuper Slow \033[1;97m]")
-	method = raw_input("\033[1;97m[\033[1;94m?\033[1;97m] Choose : ")
+	print("\n\033[1;97m[\033[1;94m?\033[1;95m] Choose Cracking Mathod")
+	print("\033[1;97m[\033[1;94m1\033[1;95m] B-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;97m[\033[1;94m2\033[1;95m] Mbasic\033[1;97m [ \033[1;95mSlow \033[1;97m]")
+	print("\033[1;97m[\033[1;94m3\033[1;95m] Free Facebook\033[1;97m [ \033[1;95mSuper Slow \033[1;97m]")
+	method = raw_input("\033[1;97m[\033[1;94m?\033[1;93m] Choose : ")
 	if method == "":
 		menu()
 	elif method == "1":
